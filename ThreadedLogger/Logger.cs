@@ -8,8 +8,12 @@ namespace ThreadedLogger
 {
     public class Logger : ILogger
     {
-        private ConcurrentQueue<Action> _queue = new ConcurrentQueue<Action>();
-        private Thread _loggerThread;
+        private readonly BlockingCollection<Action> _queue = new BlockingCollection<Action>(new ConcurrentQueue<Action>());
+        private readonly Thread _loggerThread;
+
+        /// <summary>
+        /// constructor. Initializes a thread
+        /// </summary>
         private Logger()    
         {
             _loggerThread = new Thread(ProcessQueue)
@@ -26,6 +30,26 @@ namespace ThreadedLogger
 
 
         public void Dispose()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void LogInfo(string message)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void LogWarning(string message)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void LogWarning(string message, Exception ex)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void HandleException(string message, Exception ex)
         {
             throw new NotImplementedException();
         }

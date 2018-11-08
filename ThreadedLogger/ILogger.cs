@@ -4,7 +4,14 @@ using System.Text;
 
 namespace ThreadedLogger
 {
-    interface ILogger
+    public interface ILogger : IDisposable
     {
+        void LogInfo(string message);
+
+        void LogWarning(string message);
+
+        void LogWarning(string message, Exception ex);
+
+        void HandleException(string message, Exception ex);
     }
 }
