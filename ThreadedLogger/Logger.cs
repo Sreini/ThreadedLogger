@@ -8,13 +8,14 @@ namespace ThreadedLogger
 {
     public class Logger : ILogger
     {
+        //TODO: make fields injectable
         private readonly BlockingCollection<Action> _queue = new BlockingCollection<Action>(new ConcurrentQueue<Action>());
         private readonly Thread _loggerThread;
 
         /// <summary>
         /// constructor. Initializes a thread
         /// </summary>
-        private Logger()    
+        private Logger()
         {
             _loggerThread = new Thread(ProcessQueue)
             {
