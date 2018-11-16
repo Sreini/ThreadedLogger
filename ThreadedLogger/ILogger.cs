@@ -6,11 +6,11 @@ namespace ThreadedLogger
 {
     public interface ILogger : IDisposable
     {
-        void LogInfo(string message);
+        void Info(string message);
 
-        void LogWarning(string message);
+        void Warning(string message);
 
-        void LogWarning(string message, Exception ex);
+        void Warning(string message, Exception ex);
 
         void HandleException(string message, Exception ex);
     }
