@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.28010.2050
+VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkerQueue", "ThreadedLogger\WorkerQueue.csproj", "{983128B1-9CC1-4501-9C87-94B9E73934C3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkerQueue", "WorkerQueue\WorkerQueue.csproj", "{E5F31672-74E3-497F-98AB-A5F9C3A398DC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{983128B1-9CC1-4501-9C87-94B9E73934C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{983128B1-9CC1-4501-9C87-94B9E73934C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{983128B1-9CC1-4501-9C87-94B9E73934C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{983128B1-9CC1-4501-9C87-94B9E73934C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5F31672-74E3-497F-98AB-A5F9C3A398DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5F31672-74E3-497F-98AB-A5F9C3A398DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5F31672-74E3-497F-98AB-A5F9C3A398DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5F31672-74E3-497F-98AB-A5F9C3A398DC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {CB05CCD4-81E5-4E5C-8800-32D9C75533C6}
+		SolutionGuid = {6861D5EB-B04D-422D-A153-EBBC6E1FA025}
 	EndGlobalSection
 EndGlobal
