@@ -7,7 +7,7 @@ namespace WorkerQueue
     /// <inheritdoc/>
     public class WorkerQueue : IWorkerQueue
     {
-        private const int DefaultCollectionUpperBound = 100000;
+        private const int DefaultCollectionUpperBound = 1000;
         private const int DefaultTimeout = -1;
 
         private readonly BlockingCollection<Action> _queue;
@@ -18,7 +18,7 @@ namespace WorkerQueue
         private readonly ManualResetEvent _waiting = new ManualResetEvent(false);
 
         /// <summary>
-        /// constructor with cancellation token and timeout
+        /// constructor that accepts timeout and the upper bound of the collection as optional parameters
         /// </summary>
         /// <param name="collectionUpperBound">upper bound amount of items in queue</param>
         /// <param name="timeout">time in milliseconds during which the process will try to take an item from the queue, or -1 for this time being indefinite</param>
