@@ -20,8 +20,8 @@ namespace WorkerQueue
         /// <summary>
         /// constructor that accepts timeout and the upper bound of the collection as optional parameters
         /// </summary>
-        /// <param name="collectionUpperBound">upper bound amount of items in queue</param>
         /// <param name="timeout">time in milliseconds during which the process will try to take an item from the queue, or -1 for this time being indefinite</param>
+        /// <param name="collectionUpperBound">upper bound amount of items in queue</param>
         public WorkerQueue(int timeout = DefaultTimeout, int collectionUpperBound = DefaultCollectionUpperBound)
         {
             _queue = new BlockingCollection<Action>(new ConcurrentQueue<Action>(), collectionUpperBound);
